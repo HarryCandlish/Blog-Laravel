@@ -19,7 +19,7 @@ class CreateCommentsTable extends Migration
             $table->string('author');
             $table->string('comment');
             $table->string('image');
-            $table->timestamp('date');
+            $table->timestamp('date')->nullable();
         });
     }
 
