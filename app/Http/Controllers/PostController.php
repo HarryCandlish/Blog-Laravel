@@ -16,6 +16,7 @@ class PostController extends Controller
     {
         $posts = \App\Post::all();
         return view('posts.index', ['posts' => $posts]);
+
     }
 
     /**
@@ -56,7 +57,8 @@ class PostController extends Controller
     {
      
         $post= \App\Post::find($id);
-        return view('posts.show', ['post' => $post]);
+        $comments = $post->comments;
+        return view('posts.show', ['post' => $post, 'comments' => $comments]);
     }
 
     /**

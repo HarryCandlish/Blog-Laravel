@@ -24,7 +24,14 @@
 
 <div>
  <h1>{{$post->title}}</h1>  
- <p>{{$post->text}}</p>      
+ <p>{{$post->text}}</p>     
+ @foreach ($comments as $comment)
+        <li>
+  
+        <p>{{$comment->comment}}</p>
+
+        </li>
+        @endforeach 
 </div>
 
 

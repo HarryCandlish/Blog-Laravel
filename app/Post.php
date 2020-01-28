@@ -6,9 +6,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class Post extends Model
 {
-    public function account()
+    public function comments()
     {
-        return $this->hasOne('App\Comment');
+        return $this->hasMany('App\Comments');
     }
 
     public $timestamps = false;

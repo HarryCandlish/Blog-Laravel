@@ -8,7 +8,8 @@ class Comments extends Model
 {
     public function post()
         {
-            return $this->belongsTo('App\Post')
+            return $this->belongsTo('App\Post', 'id');
         }
+
     public $timestamps = false;
 }
