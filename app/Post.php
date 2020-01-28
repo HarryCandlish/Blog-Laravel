@@ -8,6 +8,6 @@ class Post extends Model
 {
     public function account()
     {
-        return $this->hasOne('App\Comment')
+        return $this->hasOne('App\Comment');
     }
 }
