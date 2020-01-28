@@ -1,22 +1,21 @@
-<form method="POST" action="{{route('post.store')}}">
+<form method="POST" action="{{route('posts.store')}}">
 @csrf
     <label >
     Author
     </label>
-    <input class="input" type="text" value="{{$post->author}}">
-            <label 
-                    for="title" class="title">Title
-            </label>
-                        <input class="input" type="text" value="{{$post->title}}">
-            <label 
-                for="description" class="description">Description
-            </label>
-                        <input class="input" type="text" value="{{$post->description}}">
-            <label 
-                    for="text" class="text">Text
-            </label>
-                        <input class="input" type="text" value="{{$post->text}}">
-
+    <input class="input" type="text" value="author" name="author">
+        <label 
+          for="title" class="title">Title
+        </label>
+              <input class="input" type="text" value="title" name="title">
+        <label 
+              for="description" class="description">Description
+        </label>
+              <input class="input" type="text" value="description" name="description">
+        <label 
+                for="text" class="text">Text
+        </label>
+                <input class="input" type="text" value="text" name="text">
     <button type="submit">Submit</button>
 </form>
 

@@ -20,7 +20,6 @@ class CreateCommentsTable extends Migration
             $table->string('comment');
             $table->string('image');
             $table->timestamp('date')->nullable();
-
             $table->foreign('post_id')->references('id')->on('posts');
         });
     }

@@ -10,4 +10,5 @@ class Comments extends Model
         {
             return $this->belongsTo('App\Post')
         }
+    public $timestamps = false;
 }
