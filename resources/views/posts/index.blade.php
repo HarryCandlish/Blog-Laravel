@@ -5,8 +5,9 @@
         @foreach ($posts as $post)
         <li>
         <p>{{$post->title}}</p>
-        <p>{{$post->text}}</p>
+        <p>{{$post->description}}</p>
         <p>{{$post->author}}</p>
+        <a href="/:id"><p>{{$post->slug}}</p></a>
         </li>
         @endforeach
    </ul>
