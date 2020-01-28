@@ -18,7 +18,7 @@ class PostsTableSeeder extends Seeder
                  'title' => $title,
                  'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
                  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco',
-                 'image' => Str::random(10),
+                 'image' => 'https://www.google.com/search?q=images&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiintuEoaXnAhVB_XMBHTK_B6IQ_AUoAXoECA8QAw&biw=1680&bih=939#imgrc=pK-xSEi-XN8AhM:',
                  'slug' => Str::slug($title),
                  'text' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
                  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamcoLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 

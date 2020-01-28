@@ -4,6 +4,17 @@
     li {
         list-style: none;
     }
+
+    h1 {
+        text-align: center;
+    }
+
+    p {
+        text-align: center;
+        width:50%;
+        position: relative;
+        left: 25%;
+    }
    
    </style>
 </head>
@@ -12,8 +23,8 @@
 
 
 <div>
- <h1>{{$posts->title}}</h1>  
- <p>{{$posts->text}}</p>          
+ <h1>{{$post->title}}</h1>  
+ <p>{{$post->text}}</p>      
 </div>
 
 

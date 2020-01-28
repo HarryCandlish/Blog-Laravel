@@ -24,7 +24,7 @@ class PostController extends Controller
      */
     public function create()
     {
-        //
+        return view('posts.form');
     }
 
     /**
@@ -35,7 +35,14 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
-        //
+            $post = new Post();
+            $post->author = request('author');
+            $post->title = request('title');
+            $post->description = request('description');
+            $post->text = request('text');
+            $post->save();
+            
+            return redirect('/posts');
     }
 
     /**
@@ -46,9 +53,9 @@ class PostController extends Controller
      */
     public function show($id)
     {
-        // $post = new \App\Post;
-        $posts = \App\Post::find($id);
-        return view('posts.show', ['posts' => $posts]);
+     
+        $post= \App\Post::find($id);
+        return view('posts.show', ['post' => $post]);
     }
 
     /**
@@ -59,7 +66,7 @@ class PostController extends Controller
      */
     public function edit($id)
     {
-        //
+    
     }
 
     /**
