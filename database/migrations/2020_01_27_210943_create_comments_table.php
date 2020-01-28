@@ -15,10 +15,10 @@ class CreateCommentsTable extends Migration
     {
         Schema::create('comments', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->unsignedBiginteger('post_id');
-            $table->string('user_id');
+            $table->unsignedBiginteger('post_id')->nullable();
+            $table->string('user_id')->nullable();
             $table->string('comment');
-            $table->string('image');
+            $table->string('image')->nullable();
             $table->timestamp('date')->nullable();
             $table->foreign('post_id')->references('id')->on('posts');
         });

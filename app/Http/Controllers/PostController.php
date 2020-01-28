@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use \App\Post;
 
+
 class PostController extends Controller
 {
     /**
@@ -47,6 +48,8 @@ class PostController extends Controller
             return redirect('/posts');
     }
 
+
+
     /**
      * Display the specified resource.
      *
@@ -69,7 +72,7 @@ class PostController extends Controller
      */
     public function edit($id)
     {
-    
+     
     }
 
     /**
